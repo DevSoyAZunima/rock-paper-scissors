@@ -79,4 +79,4 @@ let playerPoints = 0, computerPoints = 0;
         }
     }
 
-    playGame();
+    //playGame();
