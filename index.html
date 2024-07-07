@@ -4,14 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="./game.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./game.js" defer></script>
+
 </head>
 <body>
-    <div>
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+    <div class="title"><h1>Rock, paper, scissors!</h1></div>
+
+    <div class="contentContainer">
+        <div class="leftSide">
+            <h2>Select One:</h2>
+            <div class="btns">
+                <button class="btn" id="rockBtn">Rock</button>
+                <button class="btn" id="paperBtn">Paper</button>
+                <button class="btn" id="scissorsBtn">Scissors</button>
+            </div>
+        </div>
+        <div class="rightSide" id="rightSideContainer">
+            <div class="poins">
+                <div class="thisRound">
+                    <div class="thisRoundText" id="roundResultContainer">
+                        <h3>This round:</h3> <h3 id="roundResult"></h3>
+                    </div>
+                    <div class="playerChoice" id="playerChoiceContainer">
+                        <p>Player selecction:</p> <p id="playerChoice"></p>
+                    </div>
+                    <div class="computerChoice" id="computerChoiceContainer">
+                    <p>Computer selecction:</p> <p id="computerChoice"></p>
+                    </div>
+                </div>
+                <div class="global">
+                    <h3>Global:</h3>
+                    <div class="playerPoints" id="playerPointContainer">
+                        <p>Your Points: </p> <p id="playerPoints">0</p>
+                    </div>
+                    <div class="computerPoints" id="computerPointContainer">
+                        <p>Computer Points: </p> <p id="computerPoints">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
